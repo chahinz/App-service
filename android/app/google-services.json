@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "727697332450",
+    "project_id": "servili-95a78",
+    "storage_bucket": "servili-95a78.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727697332450:android:376bf9e75af2b390e566bb",
+        "android_client_info": {
+          "package_name": "com.example.servili"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9FtCCIu1Pr_attHhcnGnr97fCFj1xG4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
