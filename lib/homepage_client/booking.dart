@@ -53,7 +53,7 @@ class _BookingsScreenState extends State<BookingsScreen> with SingleTickerProvid
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 3, vsync: this);
+    _tabController = TabController(length: 4, vsync: this);
     _bookingsFuture = fetchBookingsForCurrentWorker();
   }
 
@@ -314,6 +314,7 @@ Future<Map<String, String>> fetchCustomerInfo(String workerId) async {
           bottom: TabBar(
             controller: _tabController,
             tabs: const [
+              Tab(text: "Requested"),
               Tab(text: "Upcoming"),
               Tab(text: "Completed"),
               Tab(text: "Canceled"),
@@ -336,6 +337,7 @@ Future<Map<String, String>> fetchCustomerInfo(String workerId) async {
             return TabBarView(
               controller: _tabController,
               children: [
+                _buildBookingList(bookings.where((b) => b.status == 'pending').toList()),
                 _buildBookingList(bookings.where((b) => b.status == 'accepted').toList()),
                 _buildBookingList(bookings.where((b) => b.status == 'completed').toList()),
                 _buildBookingList(bookings

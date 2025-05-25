@@ -468,23 +468,84 @@ class _SignupScreenState extends State<SignupScreen> {
   String? _selectedType;
   String? _selectedService;
 
+  // final List<String> wilayas = [
+  //   "Adrar", "Chlef", "Laghouat", "Oum El Bouaghi", "Batna", "Béjaïa", "Biskra",
+  //   "Béchar", "Blida", "Bouira", "Tamanrasset", "Tébessa", "Tlemcen", "Tiaret",
+  //   "Tizi Ouzou", "Algiers", "Djelfa", "Jijel", "Sétif", "Saïda", "Skikda", "Sidi Bel Abbès",
+  //   "Annaba", "Guelma", "Constantine", "Médéa", "Mostaganem", "MSila", "Mascara", "Ouargla",
+  //   "Oran", "El Bayadh", "Illizi", "Bordj Bou Arreridj", "Boumerdès", "El Tarf", "Tindouf",
+  //   "Tissemsilt", "El Oued", "Khenchela", "Souk Ahras", "Tipaza", "Mila", "Aïn Defla",
+  //   "Naâma", "Aïn Témouchent", "Ghardaïa", "Relizane", "El M'Ghair", "El Menia", "Ouled Djellal",
+  //   "Bordj Badji Mokhtar", "Béni Abbès", "Timimoun", "Touggourt", "Djanet", "In Salah", "In Guezzam"
+  // ];
+
   final List<String> wilayas = [
-    "Adrar", "Chlef", "Laghouat", "Oum El Bouaghi", "Batna", "Béjaïa", "Biskra",
-    "Béchar", "Blida", "Bouira", "Tamanrasset", "Tébessa", "Tlemcen", "Tiaret",
-    "Tizi Ouzou", "Algiers", "Djelfa", "Jijel", "Sétif", "Saïda", "Skikda", "Sidi Bel Abbès",
-    "Annaba", "Guelma", "Constantine", "Médéa", "Mostaganem", "MSila", "Mascara", "Ouargla",
-    "Oran", "El Bayadh", "Illizi", "Bordj Bou Arreridj", "Boumerdès", "El Tarf", "Tindouf",
-    "Tissemsilt", "El Oued", "Khenchela", "Souk Ahras", "Tipaza", "Mila", "Aïn Defla",
-    "Naâma", "Aïn Témouchent", "Ghardaïa", "Relizane", "El M'Ghair", "El Menia", "Ouled Djellal",
-    "Bordj Badji Mokhtar", "Béni Abbès", "Timimoun", "Touggourt", "Djanet", "In Salah", "In Guezzam"
-  ];
+  "01 - Adrar",
+  "02 - Chlef",
+  "03 - Laghouat",
+  "04 - Oum El Bouaghi",
+  "05 - Batna",
+  "06 - Béjaïa",
+  "07 - Biskra",
+  "08 - Béchar",
+  "09 - Blida",
+  "10 - Bouira",
+  "11 - Tamanrasset",
+  "12 - Tébessa",
+  "13 - Tlemcen",
+  "14 - Tiaret",
+  "15 - Tizi Ouzou",
+  "16 - Algiers",
+  "17 - Djelfa",
+  "18 - Jijel",
+  "19 - Sétif",
+  "20 - Saïda",
+  "21 - Skikda",
+  "22 - Sidi Bel Abbès",
+  "23 - Annaba",
+  "24 - Guelma",
+  "25 - Constantine",
+  "26 - Médéa",
+  "27 - Mostaganem",
+  "28 - M'Sila",
+  "29 - Mascara",
+  "30 - Ouargla",
+  "31 - Oran",
+  "32 - El Bayadh",
+  "33 - Illizi",
+  "34 - Bordj Bou Arréridj",
+  "35 - Boumerdès",
+  "36 - El Tarf",
+  "37 - Tindouf",
+  "38 - Tissemsilt",
+  "39 - El Oued",
+  "40 - Khenchela",
+  "41 - Souk Ahras",
+  "42 - Tipaza",
+  "43 - Mila",
+  "44 - Aïn Defla",
+  "45 - Naâma",
+  "46 - Aïn Témouchent",
+  "47 - Ghardaïa",
+  "48 - Relizane",
+  "49 - El M'Ghair",
+  "50 - El Menia",
+  "51 - Ouled Djellal",
+  "52 - Bordj Badji Mokhtar",
+  "53 - Béni Abbès",
+  "54 - Timimoun",
+  "55 - Touggourt",
+  "56 - Djanet",
+  "57 - In Salah",
+  "58 - In Guezzam"
+];
 
   final List<String> types = ["Worker", "Customer"];
 
   final List<String> services = [
     'Plumber', 'Electrician', 'Painter', 'Mechanic', 'Carpenter', 'Cleaner', 'Gardener',
     'Babysitter', 'Mason', 'Helper', 'Laundry dooer', 'Nurse', 'Pet sitter', 'AC repair',
-    'Sewer', 'Driver', 'Tiler', 'Window washer', 'Delivery', 'Technician'
+    'Sewer', 'Driver', 'Tiler', 'Delivery', 'Technician'
   ];
 
   bool _loading = false;
